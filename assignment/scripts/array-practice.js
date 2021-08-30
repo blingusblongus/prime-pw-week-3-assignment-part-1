@@ -35,11 +35,11 @@ console.log('First animal is', animalArray[0])
 console.log('Second food is', favFoods[1]);
 
 // 3.b. TODO: Log the last animal in the array using it's array index
-
+console.log('Last food is', favFoods[2]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length,
 //      instead of the exact index number of the last item
-
+console.log('Last food is', favFoods[favFoods.length - 1]);
 
 
 // 4. Adding & Removing Array Items
@@ -50,7 +50,8 @@ animalArray.push('penguin');
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
-
+favFoods.push('sushi');
+console.log('new list:', favFoods);
 
 
 // Example: Remove the last animal by using Array.pop
@@ -60,7 +61,9 @@ console.log('The animals are now', animalArray);
 
 // 4.b. TODO: Remove the food at the end of your array &
 //      log both the food removed and the updated array
-
+let removedFood = favFoods.pop();
+console.log('Removed the last food:', removedFood);
+console.log('The food list is now:', favFoods);
 
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift('walrus');
